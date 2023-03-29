@@ -1,0 +1,37 @@
+.help {
+  padding: 80px 127px 100px 127px;
+  &__title {
+    @extend %font-main;
+    width: 310px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    font-size: 3.5rem;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+  &__items {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px 120px;
+  }
+
+  &__item {
+    text-align: center;
+    &_title {
+      @extend %font-main;
+      margin-top: 28px;
+      font-size: 2rem;
+      line-height: 115%;
+      color: #545454;
+      letter-spacing: 0.056em;
+    }
+  }
+  &__item:nth-child(n + 6) &__item_title {
+    margin-top: 26px;
+  }
+}

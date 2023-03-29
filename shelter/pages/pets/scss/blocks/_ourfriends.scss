@@ -1,0 +1,123 @@
+.ourfriends {
+  background-color: #f6f6f6;
+  &__wrapper {
+    padding: 78px 0 100px;
+  }
+  &__title {
+    padding: 0 0 0 0;
+    width: 400px;
+    @extend %font-main;
+    font-size: 3.5rem;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 59px;
+  }
+  &__btns {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__btn:nth-child(1),
+  &__btn:nth-child(2) {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    border: 2px solid #cdcdcd;
+    @extend %flex-containercenter;
+  }
+  &__btn:nth-child(3) {
+    min-width: 52px;
+    height: 52px;
+    background: #f1cdb3;
+    border: 2px solid #f1cdb3;
+    border-radius: 100%;
+    @extend %flex-containercenter;
+    transition: all 1.5s;
+    img {
+      display: block;
+    }
+  }
+  &__btn:nth-child(4),
+  &__btn:nth-child(5) {
+    min-width: 52px;
+    height: 52px;
+    border: 2px solid #fddcc4;
+    border-radius: 100%;
+    @extend %flex-containercenter;
+    transition: all 1.5s;
+    img {
+      display: block;
+    }
+  }
+  &__btn:nth-child(3):hover {
+    cursor: pointer;
+  }
+  &__btn:nth-child(4):hover,
+  &__btn:nth-child(5):hover {
+    background-color: #fddcc4;
+    cursor: pointer;
+  }
+}
+.pagination {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  &__item {
+    background: #fafafa;
+    padding-bottom: 30px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    cursor: pointer;
+    transition: all 1.2s;
+    &_name {
+      margin-top: 27px;
+      margin-bottom: 30px;
+      @extend %font-main;
+      font-size: 2rem;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #545454;
+      transition: all 0.5s;
+    }
+    &_btn {
+      @include btn;
+      padding: 14px 45px 15px 44px;
+      margin: 0 auto;
+      width: 187px;
+      height: 52px;
+      border: 2px solid #f1cdb3;
+      border-radius: 100px;
+      background-color: #fafafa;
+      @extend %font-main;
+      font-size: 1.7rem;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #292929;
+      transition: all ease-out 1.5s;
+    }
+    &_image {
+      transition: all 0.5s;
+    }
+  }
+  &__item:hover .pagination__item_name {
+    color: black;
+  }
+  &__item:hover .pagination__item_btn {
+    background-color: #f1cdb3;
+  }
+  &__item:hover {
+    background-color: white;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  }
+}

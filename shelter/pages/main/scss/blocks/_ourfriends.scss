@@ -1,0 +1,138 @@
+.ourfriends {
+  background-color: #f6f6f6;
+  &__wrapper {
+    padding: 81px 0 101px;
+  }
+  &__title {
+    @extend %font-main;
+    padding: 0 0 0 0;
+    width: 400px;
+    font-size: 3.5rem;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 60px;
+  }
+  &__btn {
+    @include btn;
+    padding-top: 15px;
+    width: 261px;
+    height: 52px;
+    margin: 0 auto;
+    letter-spacing: 0.06em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    @extend %font-main;
+    font-size: 1.7rem;
+    line-height: 130%;
+    letter-spacing: 0.0586em;
+    transition: all 3s;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: #292929;
+    transition: all 3s;
+  }
+  &__btn:hover {
+    background-color: #fddcc4;
+    transition: all 3s;
+  }
+}
+.carousel {
+  @extend %flex-container;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    gap: 90px;
+  }
+
+  &__btn_left {
+    margin-top: 3px;
+    min-width: 52px;
+    height: 52px;
+    border: 2px solid #fddcc4;
+    border-radius: 100%;
+    @extend %flex-containercenter;
+    transition: all 0.5s;
+    img {
+      display: block;
+    }
+  }
+  &__btn_left:hover {
+    background-color: #fddcc4;
+    cursor: pointer;
+  }
+  &__btn_right {
+    margin-top: 3px;
+    min-width: 52px;
+    height: 52px;
+    border: 2px solid #fddcc4;
+    border-radius: 100%;
+    @extend %flex-containercenter;
+    transition: all 0.5s;
+    img {
+      display: block;
+      rotate: 180deg;
+    }
+  }
+  &__btn_right:hover {
+    background-color: #fddcc4;
+    cursor: pointer;
+  }
+
+  &__item {
+    background: #fafafa;
+    padding-bottom: 30px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    cursor: pointer;
+    transition: all 1.2s;
+    &_image {
+      transition: all 0.5s;
+    }
+
+    &_name {
+      @extend %font-main;
+      margin-top: 25px;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #545454;
+      transition: all 0.5s;
+    }
+    &_btn {
+      @include btn;
+      padding: 14px 45px 15px 44px;
+      margin: 0 auto;
+      width: 187px;
+      height: 52px;
+      border: 2px solid #f1cdb3;
+      border-radius: 100px;
+      background-color: #fafafa;
+      @extend %font-main;
+      font-size: 1.7rem;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #292929;
+      transition: all ease-out 1.5s;
+      cursor: pointer;
+    }
+  }
+  &__item:hover .carousel__item_name {
+    color: black;
+  }
+  &__item:hover .carousel__item_btn {
+    background-color: #f1cdb3;
+  }
+  &__item:hover {
+    background-color: white;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  }
+}

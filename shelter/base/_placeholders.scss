@@ -1,0 +1,28 @@
+%font-main {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+}
+
+%font-alt {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}
+
+%flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-containerleft {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+%flex-containercenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

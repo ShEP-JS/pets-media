@@ -1,0 +1,89 @@
+.header {
+  &__nav {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    @extend %flex-container;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__list {
+    @extend %flex-container;
+    list-style: none;
+    width: 443px;
+    height: 27px;
+    @extend %font-alt;
+    font-size: 1.5rem;
+    line-height: 160%;
+    color: #cdcdcd;
+    &_item {
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: #cdcdcd;
+        transition: all 0.5s;
+      }
+    }
+    &_item:hover a {
+      color: #ffffff;
+    }
+    &_item:active a {
+      color: #ffffff;
+      border-bottom: 3px solid $theme-color;
+    }
+    &_item:nth-child(1) {
+      border-bottom: 3px solid $theme-color;
+      color: #ffffff;
+      cursor: default;
+    }
+  }
+  &__logo_top {
+    @extend %font-main;
+    font-size: 3.2rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
+    margin-bottom: 11px;
+  }
+  &__logo_bottom {
+    @extend %font-alt;
+    font-size: 1.3rem;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin-left: 4px;
+  }
+  &__hamburger {
+    display: none;
+    &_line {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 2px;
+      background-color: #f1cdb3;
+    }
+    &_line:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -10px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #f1cdb3;
+    }
+    &_line:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 10px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: #f1cdb3;
+    }
+  }
+}

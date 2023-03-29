@@ -1,0 +1,15 @@
+@mixin btn {
+  padding: 15px 45px 15px 45px;
+  width: 207px;
+  height: 52px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  color: #292929;
+  cursor: pointer;
+}

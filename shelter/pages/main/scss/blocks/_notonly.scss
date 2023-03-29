@@ -1,0 +1,43 @@
+.notonly {
+  &__wrapper {
+    @extend %flex-container;
+  }
+  &__image {
+    img {
+      display: block;
+      border: none;
+    }
+  }
+  &__descr {
+    &_title {
+      @extend %font-main;
+      width: 310px;
+      font-size: 4.4rem;
+      line-height: 130%;
+      color: #ffffff;
+      margin-bottom: 42px;
+      margin-top: 162px;
+    }
+    &_subtitle {
+      max-width: 460px;
+      @extend %font-alt;
+      font-size: 1.5rem;
+      line-height: 160%;
+      color: #cdcdcd;
+      margin-bottom: 42px;
+    }
+    &_btn {
+      @include btn;
+      transition: all 2s;
+    }
+    &_btn:hover {
+      background-color: #fddcc4;
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 2s;
+  }
+}

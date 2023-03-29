@@ -1,0 +1,29 @@
+.about {
+  &__wrapper {
+    @extend %flex-container;
+    padding: 80px 175px 95px 175px;
+  }
+  &__descr {
+    max-width: 430px;
+    margin-top: 13px;
+    &_title {
+      @extend %font-main;
+      max-width: 370px;
+      font-size: 3.5rem;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #545454;
+      margin-bottom: 24px;
+      margin-right: 60px;
+    }
+    &_subtitle {
+      @extend %font-alt;
+      font-size: 1.5rem;
+      line-height: 160%;
+      color: #4c4c4c;
+    }
+    &_first-paragraph {
+      margin-bottom: 25px;
+    }
+  }
+}
